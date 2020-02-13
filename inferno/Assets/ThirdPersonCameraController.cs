@@ -14,7 +14,7 @@ public class ThirdPersonCameraController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         CamControl();    
     }
@@ -23,6 +23,7 @@ public class ThirdPersonCameraController : MonoBehaviour
         mouseX += Input.GetAxis("Mouse X") * RotationSpeed;
         mouseY -= Input.GetAxis("Mouse Y") * RotationSpeed;
 
+        mouseX = Mathf.Clamp(mouseX, -40, 40);
         mouseY = Mathf.Clamp(mouseY, -75, 25);
 
         transform.LookAt(Target);
