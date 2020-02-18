@@ -10,7 +10,9 @@ public class Win : MonoBehaviour
         if(other.tag == "Player")
         {
             Debug.Log("You Won!!!");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameManager GM = FindObjectOfType<GameManager>();
+            GM.PlayerWon = true;
+           //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

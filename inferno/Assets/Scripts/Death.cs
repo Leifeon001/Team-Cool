@@ -10,7 +10,9 @@ public class Death : MonoBehaviour
         if(other.tag == "Player")
         {
             //Enable Death Screen
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameManager GM = FindObjectOfType<GameManager>();
+            GM.PlayerDead = true;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
