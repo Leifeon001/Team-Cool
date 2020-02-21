@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 769857475303809039}
   - component: {fileID: 769857475303809024}
   - component: {fileID: 769857475303809025}
+  - component: {fileID: 4805933214922146702}
   m_Layer: 0
   m_Name: Jump wall (1)
   m_TagString: Untagged
@@ -303,9 +304,21 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769857475303809026}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &4805933214922146702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769857475303809026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed6afdf6eb3cc54da6e0627ed0ba6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
