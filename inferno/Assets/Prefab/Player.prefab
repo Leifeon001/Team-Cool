@@ -374,7 +374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   gravity: 100
-  jumpHeight: 3
+  jumpHeight: 2.5
   distToGround: 2
   ground:
     serializedVersion: 2
