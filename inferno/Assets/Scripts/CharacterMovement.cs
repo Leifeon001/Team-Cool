@@ -10,7 +10,7 @@ public class CharacterMovement : MonoBehaviour
     Vector3 Velocity = Vector3.zero;
     public float gravity = 10.0f;
     public float jumpHeight = 10f;
-    public float distToGround = 2f;
+    public float distToGround = 1f;
     public LayerMask ground;
 
     bool isGrounded;
@@ -25,6 +25,16 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         isGrounded = Physics.Raycast(transform.position, Vector3.down, distToGround, ground);
+        Animator Play = GetComponentInChildren<Animator>();
+        if(Play != null)
+        {
+            Debug.Log(Play);
+        }
+        if (isGrounded)
+        {
+            Play.SetBool("Jump", false);
+            Debug.Log(Play.GetBool("Jump"));
+        }
 
         if (isGrounded && Velocity.y < 0)
         {
@@ -37,8 +47,10 @@ public class CharacterMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             Velocity.y = Mathf.Sqrt(jumpHeight * -2f * -(gravity));
+           
+            Play.SetBool("Jump", true);
+            Debug.Log(Play.GetBool("Jump"));
         }
-
         Velocity.y -= gravity * Time.deltaTime;
 
         Char.Move(Velocity * Time.deltaTime);
