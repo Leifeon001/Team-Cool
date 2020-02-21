@@ -9,9 +9,9 @@ public class MainMenuScript : MonoBehaviour
     public GameObject MainMenu;
     public GameObject Difficulty;
     public GameObject Level;
-    //public GameObject Options;
+    public GameObject Credits;
     [Header("Levels")]
-    public string Level1; 
+    public string Level1;
     public string Level2;
     public string Level3;
 
@@ -22,6 +22,7 @@ public class MainMenuScript : MonoBehaviour
         MainMenu.SetActive(true);
         Difficulty.SetActive(false);
         Level.SetActive(false);
+        Credits.SetActive(false);
     }
 
     public void PlayClick()
@@ -29,24 +30,32 @@ public class MainMenuScript : MonoBehaviour
         MainMenu.SetActive(false);
         Difficulty.SetActive(true);
     }
-
+    public void CreditClick()
+    {
+        MainMenu.SetActive(false);
+        Credits.SetActive(true);
+    }
     public void SelectedDiff()
     {
         Difficulty.SetActive(false);
         Level.SetActive(true);
     }
-
     public void OnBack()
     {
-        if(Difficulty.activeSelf == true)
+        if (Difficulty.activeSelf == true)
         {
             Difficulty.SetActive(false);
             MainMenu.SetActive(true);
         }
-        else if(Level.activeSelf == true)
+        else if (Level.activeSelf == true)
         {
             Level.SetActive(false);
             Difficulty.SetActive(true);
+        }
+        else if(Credits.activeSelf == true)
+        {
+            Credits.SetActive(false);
+            MainMenu.SetActive(true);
         }
     }
 
@@ -63,5 +72,19 @@ public class MainMenuScript : MonoBehaviour
     public void LvThree()
     {
         SceneManager.LoadScene(Level3);
+    }
+
+    public void OnApplicationQuit()
+    {
+#if UNITY_STANDALONE
+        //Quit the application
+        Application.Quit();
+#endif
+
+        //If we are running in the editor
+#if UNITY_EDITOR
+        //Stop playing the scene
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }
