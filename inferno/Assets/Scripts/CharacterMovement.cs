@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     CharacterController Char;
-    public float speed;
+    public int speed;
     Vector3 MoveDir;
     Vector3 Velocity = Vector3.zero;
     public float gravity = 10.0f;
@@ -19,6 +19,8 @@ public class CharacterMovement : MonoBehaviour
     void Start()
     {
         Char = GetComponent<CharacterController>();
+        GameManager GM = FindObjectOfType<GameManager>();
+        speed = GM.GetSpeed();
     }
 
     // Update is called once per frame
