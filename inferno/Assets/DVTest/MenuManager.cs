@@ -31,4 +31,9 @@ public class MenuManager : MonoBehaviour
         print("Leaving!");
         Application.Quit();
     }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

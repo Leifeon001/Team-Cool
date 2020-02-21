@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     GameObject GameOver;
     [SerializeField] GameObject optionMenu;
     [SerializeField] CharacterController cc;
+    [SerializeField] ThirdPersonCameraController tpcc;
     [SerializeField] bool ccBool = true;
 
     void Start()
@@ -24,8 +25,8 @@ public class GameManager : MonoBehaviour
             GameOver.SetActive(false);
         }
 
-        //optionMenu = FindObjectOfType<OptMenuRefer>().gameObject;
-        //optionMenu = GameObject.FindObjectOfType<OptMenuRefer>().gameObject;
+        cc = FindObjectOfType<Player>().GetComponent<CharacterController>();
+        tpcc = FindObjectOfType<Player>().GetComponentInChildren<ThirdPersonCameraController>();
     }
 
     private void Update()
@@ -51,7 +52,8 @@ public class GameManager : MonoBehaviour
             optionMenu.SetActive(true);
             ccBool = false;
             cc.enabled = false;
-            //Time.timeScale = 0;
+            tpcc.enabled = false;
+            Time.timeScale = 0;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
@@ -69,6 +71,9 @@ public class GameManager : MonoBehaviour
         optionMenu.SetActive(false);
         ccBool = true;
         cc.enabled = true;
-
+        tpcc.enabled = true;
+        Time.timeScale = 1;
     }
+
+   
 }
