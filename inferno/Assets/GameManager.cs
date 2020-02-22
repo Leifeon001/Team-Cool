@@ -14,6 +14,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] bool ccBool = true;
     public static int CharacterSpeed;
 
+    //private void Awake()
+    //{
+    //    cc = FindObjectOfType<Player>().GetComponent<CharacterController>();
+    //    tpcc = FindObjectOfType<Player>().GetComponentInChildren<ThirdPersonCameraController>();
+    //}
+
     void Start()
     {
         GameOver = GameObject.Find("WinScreen");
@@ -21,7 +27,17 @@ public class GameManager : MonoBehaviour
         {
             GameOver.SetActive(false);
         }
-      
+
+        //Finding Option Menu
+        optionMenu = FindObjectOfType<OptMenuRefer>().gameObject;
+        if (optionMenu != null)
+        {
+            optionMenu.SetActive(false);
+        }
+
+        //Finding references that are needed for GM
+        cc = FindObjectOfType<Player>().GetComponent<CharacterController>();
+        tpcc = FindObjectOfType<Player>().GetComponentInChildren<ThirdPersonCameraController>();
     }
 
     private void Update()
