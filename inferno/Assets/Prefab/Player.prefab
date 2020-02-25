@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334462599}
   - component: {fileID: 1334462600}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1078085086981979954}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 1078085087538355519}
   - component: {fileID: 230590372}
   - component: {fileID: 230590371}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 1078085087697932256}
   - component: {fileID: 1078085087697932257}
   - component: {fileID: 1078085087697932262}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 1078085087775099109}
   - component: {fileID: 1078085087775099114}
   - component: {fileID: 1078085087775099111}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -482,13 +482,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078085087775099115}
-  m_LocalRotation: {x: 0.19242316, y: -0.005330106, z: 0.0025172257, w: 0.9812944}
-  m_LocalPosition: {x: -7.7461875e-23, y: 2.0200005, z: -2.54}
+  m_LocalRotation: {x: 0.1598276, y: -0.005243839, z: 0.0026923222, w: 0.98712736}
+  m_LocalPosition: {x: -6.4692167e-23, y: 1.6870003, z: -2.6029997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1078085086981979954}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 22.19, y: -0.587, z: 0.179}
+  m_LocalEulerAnglesHint: {x: 18.395, y: -0.573, z: 0.22000001}
 --- !u!20 &1078085087775099109
 Camera:
   m_ObjectHideFlags: 0
@@ -498,8 +498,8 @@ Camera:
   m_GameObject: {fileID: 1078085087775099115}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.5921569, g: 0.41568628, b: 0.34117648, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -567,6 +567,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 99394d6791171714da350bab69135180, type: 2}
+    - target: {fileID: -6057140222963153312, guid: 4ee10fb6010913644a26a9f1c25185fa,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 4ee10fb6010913644a26a9f1c25185fa,
         type: 3}
       propertyPath: m_ApplyRootMotion
