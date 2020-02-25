@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 683
+  controlID: 2299
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 494}
   m_MaxSize: {x: 10004, y: 14044}
   vertical: 1
-  controlID: 594
+  controlID: 2230
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -357,10 +357,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d6320000
+      scrollPos: {x: 0, y: 897}
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: b88effff7898fffffaa9fffffea9ffff2ab3ffff7ab8ffff6ac6ffff3accffffeed9ffff24eaffff66edffff6aedffffe4efffff60fbffff
+      m_ExpandedIDs: 26ceffffbaceffff34d8ffffc4deffff34f8ffff7ac00000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -413,16 +413,16 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: 95519392504a1d64181256013ae267e3
   m_Gizmos: 1
-  m_SceneIsLit: 1
+  m_SceneIsLit: 0
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 8.95983, y: -21.61015, z: 9.652256}
+    m_Target: {x: -8.59569, y: -11.131736, z: 132.15485}
     speed: 2
-    m_Value: {x: 11.296239, y: 24.86055, z: -7.2300406}
+    m_Value: {x: -8.59569, y: -11.131736, z: 132.15485}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -451,13 +451,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.23775458, y: 0.40329382, z: -0.10843656, w: 0.8772642}
+    m_Target: {x: -0.08125024, y: -0.00535661, z: -0.0009368838, w: -0.996963}
     speed: 2
-    m_Value: {x: -0.21310106, y: 0.020749038, z: -0.0052511515, w: -0.9767957}
+    m_Value: {x: -0.07973213, y: -0.005353681, z: -0.0009446592, w: -0.99680144}
   m_Size:
-    m_Target: 33.332176
+    m_Target: 42.622437
     speed: 2
-    m_Value: 11.541534
+    m_Value: 40.78702
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c262c1329a02fa49b5cb4c297106f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 147, y: 29}
+  m_MinSize: {x: 143, y: 29}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: ProBuilder
@@ -579,14 +579,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\GitHub\Team-Cool\inferno
+  m_LastProjectPath: D:\Study\second month HM\123\Team-Cool\inferno
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: d2360000
-    m_LastClickedID: 14034
-    m_ExpandedIDs: 00000000303100004234000000ca9a3b
+    scrollPos: {x: 0, y: 59}
+    m_SelectedIDs: ea390000
+    m_LastClickedID: 14826
+    m_ExpandedIDs: 00000000603400007037000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -614,7 +614,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000303100004234000000ca9a3b
+    m_ExpandedIDs: 00000000603400007037000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
