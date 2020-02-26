@@ -12,7 +12,7 @@ public class CharacterMovement : MonoBehaviour
     public float jumpHeight = 10f;
     public float distToGround = 1f;
     public LayerMask ground;
-
+    [HideInInspector] public Animator Play;
     bool isGrounded;
 
     // Start is called before the first frame update
@@ -27,7 +27,7 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         isGrounded = Physics.Raycast(transform.position, Vector3.down, distToGround, ground);
-        Animator Play = GetComponentInChildren<Animator>();
+        Play = GetComponentInChildren<Animator>();
         if(Play != null)
         {
             Debug.Log(Play);
