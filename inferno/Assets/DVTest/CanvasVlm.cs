@@ -53,13 +53,13 @@ public class CanvasVlm : MonoBehaviour
     public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutionsVar[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, 0);
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
-    //public void FullScreenControl (bool isFullScreen)
-    //{
-    //    Screen.fullScreen = isFullScreen;
-    //}
+    public void FullScreenControl(bool isFullScreen = false)
+    {
+        Screen.fullScreen = isFullScreen;
+    }
 
     //void Update()
     //{
